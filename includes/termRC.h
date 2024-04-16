@@ -27,9 +27,18 @@
 
 #include <stdlib.h>
 
+typedef struct s_termRC{
+    char **map;
+} t_termRC;
+
+//** utils.c **//
 size_t errorMessage(char *msg);
+void freeDouble(char **array);
+
+//** raycast.c **//
 size_t raycast();
 
+//** parser.c **//
 size_t parseMap(char *filename);
 char *getNextLine(int fd);
 

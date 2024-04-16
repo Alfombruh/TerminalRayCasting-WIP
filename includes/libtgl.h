@@ -10,7 +10,7 @@ typedef struct s_tgl{
     char *image;
 } t_tgl;
 
-t_tgl *tgl_createCanvas(size_t lines, size_t columns);
+t_tgl *tgl_createCanvas(size_t lines, size_t columns, char emptyCharacter);
 size_t tgl_clearImage(t_tgl *tgl);
 void tgl_printCanvas(t_tgl *tgl);
 size_t tgl_pixelToCanvas(t_tgl *tgl ,char fillin, size_t x_position, size_t y_position);
