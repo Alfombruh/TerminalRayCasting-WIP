@@ -36,10 +36,10 @@ size_t errorMessage(char *msg);
 void freeDouble(char **array);
 
 //** raycast.c **//
-size_t raycast();
+size_t raycast(t_termRC *trc);
 
 //** parser.c **//
-size_t parseMap(char *filename);
+size_t parseMap(char *filename, t_termRC *tr);
 char *getNextLine(int fd);
 
 #endif

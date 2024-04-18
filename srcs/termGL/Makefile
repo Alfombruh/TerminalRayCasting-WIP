@@ -6,6 +6,7 @@ FILES = tgl_clearCanvas \
 		tgl_pixelToCanvas \
 		tgl_printCanvas \
 		tgl_destroyCanvas \
+		tgl_imageToCanvas \
 
 SRCS = $(addsuffix .c,$(FILES))
 OBJS = $(addsuffix .o,$(FILES))
